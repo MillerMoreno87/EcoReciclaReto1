@@ -32,7 +32,7 @@
             android:id="@+id/txVmez"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1.5"
+            android:layout_weight="4"
             android:text="Mes:"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -88,7 +88,7 @@
             android:id="@+id/tVprc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:text="Precio:"
             android:textSize="20sp"
             android:textStyle="bold" />
