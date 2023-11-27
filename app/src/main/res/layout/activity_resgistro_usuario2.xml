@@ -30,9 +30,11 @@
       android:id="@+id/editTextText2"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:background="#F0F4EB"
       android:ems="10"
       android:hint="Digite Nombre y apellido"
       android:inputType="text"
+      android:minHeight="48dp"
       android:paddingHorizontal="10dp" />
 
   <TextView
@@ -49,10 +51,11 @@
       android:id="@+id/editTextTextR"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:backgroundTint="#275329"
+      android:background="#F0F4EB"
       android:ems="10"
       android:hint="Email"
-      android:inputType="text"
+      android:inputType="text|textEmailAddress"
+      android:minHeight="48dp"
       android:paddingHorizontal="10dp" />
 
   <TextView
@@ -63,15 +66,18 @@
       android:paddingHorizontal="10dp"
       android:text="Contraseña:"
       android:textAlignment="textStart"
-      android:textSize="20sp" />
+      android:textSize="20sp"
+      tools:ignore="DuplicateIds" />
 
   <EditText
       android:id="@+id/editTextTextPasswordR"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:background="#F0F4EB"
       android:ems="10"
       android:hint="Ingrese contraseña"
       android:inputType="textPassword"
+      android:minHeight="48dp"
       android:paddingHorizontal="10dp"
       android:password="true" />
 
