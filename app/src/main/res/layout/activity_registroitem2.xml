@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/textViewRegitem"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:background="#8F150C"
         android:text="Registrar Item"
         android:textAlignment="center"
