@@ -14,7 +14,8 @@
       android:id="@+id/imageView"
       android:layout_width="match_parent"
       android:layout_height="200dp"
-      app:srcCompat="@drawable/imagen_tierra" />
+      app:srcCompat="@drawable/imagen_tierra"
+      tools:ignore="ContentDescription,ImageContrastCheck" />
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -26,14 +27,16 @@
         app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre Completo"
+        android:hint="Nombre completo"
         android:id="@+id/name_user"
-        >
+        tools:ignore="HardcodedText">
 
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:inputType="text" />
+          android:inputType="text"
+          android:textColorHint="#546E7A"
+          tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -42,12 +45,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Correo Electronico"
-        app:startIconDrawable="@drawable/baseline_alternate_email_24">
+        app:startIconDrawable="@drawable/baseline_alternate_email_24"
+        tools:ignore="HardcodedText">
 
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:inputType="textEmailAddress" />
+          android:inputType="textEmailAddress"
+          tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,13 +63,13 @@
         app:startIconDrawable="@drawable/baseline_block_24"
         app:endIconMode="password_toggle"
         android:id="@+id/password1_user"
-        >
+        tools:ignore="HardcodedText">
 
       <com.google.android.material.textfield.TextInputEditText
-          android:layout_height="wrap_content"
           android:layout_width="match_parent"
+          android:layout_height="wrap_content"
           android:inputType="textPassword"
-          />
+          tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,13 +80,13 @@
         app:startIconDrawable="@drawable/baseline_block_24"
         app:endIconMode="password_toggle"
         android:id="@+id/password2_user"
-        >
+        tools:ignore="HardcodedText">
 
       <com.google.android.material.textfield.TextInputEditText
-          android:layout_height="wrap_content"
           android:layout_width="match_parent"
+          android:layout_height="wrap_content"
           android:inputType="textPassword"
-          />
+          tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
 
     </com.google.android.material.textfield.TextInputLayout>
   </LinearLayout>
@@ -92,7 +97,8 @@
       android:backgroundTint="#4FA652"
       android:focusableInTouchMode="true"
       android:text="Registrarse"
-      android:textSize="20sp" />
+      android:textSize="20sp"
+      tools:ignore="HardcodedText,VisualLintButtonSize" />
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -103,35 +109,40 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="#93B36F"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
 
       <ImageView
           android:id="@+id/imageView2"
           android:layout_width="match_parent"
           android:layout_height="60dp"
           android:layout_weight="1"
-          app:srcCompat="@drawable/baseline_home_24" />
+          app:srcCompat="@drawable/baseline_home_24"
+          tools:ignore="ContentDescription" />
 
       <ImageView
           android:id="@+id/imageView3"
           android:layout_width="match_parent"
           android:layout_height="60dp"
           android:layout_weight="1"
-          app:srcCompat="@drawable/baseline_bar_chart_24" />
+          app:srcCompat="@drawable/baseline_bar_chart_24"
+          tools:ignore="ContentDescription" />
 
       <ImageView
           android:id="@+id/imageView4"
           android:layout_width="match_parent"
           android:layout_height="60dp"
           android:layout_weight="1"
-          app:srcCompat="@drawable/baseline_person_24" />
+          app:srcCompat="@drawable/baseline_person_24"
+          tools:ignore="ContentDescription" />
 
       <ImageView
           android:id="@+id/imageView5"
           android:layout_width="match_parent"
           android:layout_height="60dp"
           android:layout_weight="1"
-          app:srcCompat="@drawable/baseline_logout_24" />
+          app:srcCompat="@drawable/baseline_logout_24"
+          tools:ignore="ContentDescription" />
     </LinearLayout>
 </LinearLayout>
 </LinearLayout>

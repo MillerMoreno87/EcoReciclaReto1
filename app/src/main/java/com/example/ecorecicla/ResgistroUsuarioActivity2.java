@@ -11,10 +11,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.ecorecicla.Modelos.User;
+import com.google.android.material.textfield.TextInputLayout;
 
 public class ResgistroUsuarioActivity2 extends AppCompatActivity {
 
-    EditText nombreCom,correo,password;
+    TextInputLayout nombreCom,correo,password1,password2;
     Button registrar;
 
     @Override
@@ -22,9 +23,10 @@ public class ResgistroUsuarioActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resgistro_usuario2);
 
-        nombreCom= findViewById(R.id.editTextText2);
-        correo= findViewById(R.id.editTextTextR);
-        password= findViewById(R.id.editTextTextPasswordR);
+        nombreCom= findViewById(R.id.name_user);
+        correo= findViewById(R.id.email_user);
+        password1= findViewById(R.id.password1_user);
+        password2= findViewById(R.id.password2_user);
 
 
         registrar=findViewById(R.id.buttonRegist);
@@ -48,28 +50,37 @@ public class ResgistroUsuarioActivity2 extends AppCompatActivity {
     public boolean validateUser(){
 
        boolean validate=true;
-       if(nombreCom.getEditableText().toString().isEmpty()){
+       if(nombreCom.getEditText().getText().toString().isEmpty()){
            nombreCom.setBackgroundColor(Color.RED);
            validate=false;
        }
-       if (correo.getEditableText().toString().isEmpty()){
+       if (correo.getEditText().getText().toString().isEmpty()){
            correo.setBackgroundColor(Color.RED);
            validate=false;
        }
-       if (password.getEditableText().toString().isEmpty()){
-            password.setBackgroundColor(Color.RED);
+       if (password1.getEditText().getText().toString().isEmpty()){
+            password1.setBackgroundColor(Color.RED);
             validate=false;
        }
+        if (password2.getEditText().getText().toString().isEmpty()){
+            password2.setBoxBackgroundColor(Color.RED);
+            validate=false;
+        }
+        if (!password1.getEditText().getText().toString().equals(password2.getEditText().getText().toString())){
+            password1.setBoxBackgroundColor(Color.RED);
+            password2.setBoxBackgroundColor(Color.RED);
+            validate=false;
+        }
        return validate;
     }
 
     public User createrUser(){
         String id,nomUser,correoUser,paxxword;
 
-        nomUser=nombreCom.getEditableText().toString();
+        nomUser=nombreCom.getEditText().getText().toString();
         id=generateID(nomUser);
-        correoUser=correo.getEditableText().toString();
-        paxxword=password.getEditableText().toString();
+        correoUser=correo.getEditText().getText().toString();
+        paxxword=password1.getEditText().getText().toString();
         User user= new User(id,nomUser,correoUser,paxxword);
 
         return user;
