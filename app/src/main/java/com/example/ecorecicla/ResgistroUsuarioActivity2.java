@@ -65,8 +65,9 @@ public class ResgistroUsuarioActivity2 extends AppCompatActivity {
 
     public User createrUser(){
         String id,nomUser,correoUser,paxxword;
-        id="";
+
         nomUser=nombreCom.getEditableText().toString();
+        id=generateID(nomUser);
         correoUser=correo.getEditableText().toString();
         paxxword=password.getEditableText().toString();
         User user= new User(id,nomUser,correoUser,paxxword);
