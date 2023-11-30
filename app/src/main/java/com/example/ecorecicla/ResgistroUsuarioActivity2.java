@@ -55,7 +55,7 @@ public class ResgistroUsuarioActivity2 extends AppCompatActivity {
                         throw new RuntimeException(e);
                     }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Todos los campos deben ser diligenciados",
+                    Toast.makeText(getApplicationContext(), "Todos los campos deben estar diligenciados",
                             Toast.LENGTH_LONG).show();
 
                 }

@@ -27,7 +27,7 @@
         app:startIconDrawable="@drawable/baseline_drive_file_rename_outline_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre completo"
+        android:hint="Nombre y apellido"
         android:id="@+id/name_user"
         tools:ignore="HardcodedText">
 
