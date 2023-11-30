@@ -27,7 +27,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/eTxtUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#275329"
@@ -48,7 +48,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/eTxtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

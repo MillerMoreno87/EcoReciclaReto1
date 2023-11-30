@@ -48,7 +48,7 @@ public class ResgistroUsuarioActivity2 extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Registro Exitoso", Toast.LENGTH_LONG).show();
                     try {
-                        sleep(500);
+                        sleep(300);
                         startActivity(inicio);
                         finish();
                     } catch (InterruptedException e) {
