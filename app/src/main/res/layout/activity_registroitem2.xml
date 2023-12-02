@@ -36,7 +36,7 @@
             android:id="@+id/txVmez"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="4"
+            android:layout_weight="4.5"
             android:text="Mes:"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
             android:id="@+id/tVelement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.3"
+            android:layout_weight="3"
             android:text="Elemento:"
             android:textAlignment="viewStart"
             android:textSize="20sp"
@@ -75,9 +75,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Plastico, Carton, Vidrio, Tecnologia"
+            android:hint="Plastico, Carton, Vidrio"
             android:inputType="text"
-            android:textSize="16sp"
+            android:textSize="18sp"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -106,6 +106,31 @@
             android:inputType="text"
             android:minHeight="48dp"
             android:textColor="#F1DA60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="15sp">
+
+        <TextView
+            android:id="@+id/tVcantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Cantidad"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/eTxcntdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Cantidad en Kg"
+            android:inputType="text" />
     </LinearLayout>
 
     <Button

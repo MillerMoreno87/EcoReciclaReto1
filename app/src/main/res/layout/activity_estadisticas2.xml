@@ -54,7 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Precio"
+                android:text="Cantidad"
                 android:textSize="16sp" />
 
             <TextView
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Promedio"
+                android:text="Precio"
                 android:textSize="16sp" />
         </TableRow>
 
