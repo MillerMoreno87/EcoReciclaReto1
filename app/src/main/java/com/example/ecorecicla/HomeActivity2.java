@@ -22,11 +22,17 @@ public class HomeActivity2 extends AppCompatActivity {
         stadist=findViewById(R.id.buttonStadisti);
         recomenda=findViewById(R.id.buttonRecomenda);
 
+        Intent receive= getIntent();
+        String idUser= receive.getStringExtra("idUser");
 
         Intent registItem=new Intent(getApplicationContext(),
                 RegistroitemActivity2.class);
+        registItem.putExtra("idUser",idUser);
+
         Intent estadistica= new Intent(getApplicationContext(),
                 EstadisticasActivity2.class);
+        estadistica.putExtra("idUser",idUser);
+
         Intent recomendacion=new Intent(getApplicationContext(),
                 RecomendacionActivity2.class);
 
