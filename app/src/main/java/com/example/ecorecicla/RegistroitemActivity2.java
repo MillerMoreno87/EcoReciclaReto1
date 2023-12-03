@@ -71,9 +71,10 @@ public class RegistroitemActivity2 extends AppCompatActivity {
             BufferedWriter bufferedWriter= new BufferedWriter(writer);
             bufferedWriter.write(
                     registrarI.getSERIAL()+","+
+                            registrarI.getMonth()+","+
+                            registrarI.getElement()+","+
                             registrarI.getQuantity()+","+
                             registrarI.getPrice()+","+
-                            registrarI.getMonth()+","+
                             registrarI.getIdUser()
             );
             bufferedWriter.newLine();
@@ -86,7 +87,8 @@ public class RegistroitemActivity2 extends AppCompatActivity {
     public void cleanView(){
         quantity.setText("");
         price.setText("");
-        month.setSelection(0);
+        element.setText("");
+        month.setText("");
     }
 
 
